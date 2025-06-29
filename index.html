@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's Me Alfian</title>
     <link href="/src/style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
 </head>
-<body class="bg-black text-white">
-    <!-- <header class="header">hello
-</header> -->
+
+<body class="bg-[#222831] text-gray-100 font-poppins ">
+    <!-- <header class="header">
+        <a href="#" class="logo">Alfian.</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skill">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header> -->
     <section id="home" class="pt-36">
         <div class="container">
-            <div class="flex flex-warp">
+            <div class="flex-warp">
                 <div class="w-full self-center px-4">
-                    <h1 class="text-base font-semibold text">Hi Everyone</h1>
-                    <h2>Fullstack Developer</h2>
-                    <p>An active Information Systems student with knowledge in web development using Laravel and Tailwind CSS, and skills in Go Language. Actively involved in organizations, accustomed to working in teams, and possesses strong communication skills.</p>
+                    <h1 class="font-semibold text-lg">Hi Everyone, It's Me
+                        <span class="text-[#00abf0] block text-4xl">Muhammad Alfian Handi Yudha</span>
+                    </h1>
+                    <h2 class="text-gray-300 mb-3">Fullstack Developer</h2>
+                    <p class="font-medium text-sm">An active Information Systems student with knowledge in
+                        web development using Laravel and
+                        Tailwind CSS, and skills in Go Language. Actively involved in organizations, accustomed to
+                        working in teams, and possesses strong communication skills.</p><br>
+                    <a href="#"
+                        class=" font-semibold bg-[#00abf0] rounded-full hover:shadow-lg hover:border-2  hover:bg-[#222831] hover:text-[#00abf0] transition duration-400 ease-in-out py-2 px-5 mt-6">Contact</a>
+                </div>
+                <div class="w-full self-end px-4">
+                    <div class="mt-10">
+                        <img src="foto.png" alt="foto ganteng" class="max-w-full mx-auto">
+                    
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 </body>
+
 </html>
