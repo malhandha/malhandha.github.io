@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -22,9 +23,13 @@
             },
         }
     </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </head>
 
-<body class="bg-[#222831] text-gray-100 font-poppins ">
+<body class="bg-[#1a1a2e] text-gray-100 font-poppins ">
     <header class="flex flex-wrap">
         <a href="#" class="w-1/2">Alfian.</a>
         <nav class="w-1/2 right-0 mt-0">
@@ -35,7 +40,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="home" class="pt-10 lg:pt-6 -mt-10 -mb-20 pb-20 bg-[#222831] text-gray-100">
+    <section id="home" class="pt-10 lg:pt-6 -mt-10 -mb-20 pb-20 bg-[#1a1a2e] text-gray-100" >
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2 lg:pl-20">
@@ -87,7 +92,7 @@
         </div>
 
     </section> -->
-    <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900">
+    <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900" >
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-6">
                 About <span class="text-[#00abf0]">Me</span>
@@ -106,6 +111,72 @@
                 class="inline-block bg-[#00abf0] text-white px-6 py-2 rounded-full font-semibold hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0] transition duration-300">
                 Read More
             </a>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 bg-[#1a1a2e] text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
+            <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Hardskill</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Card 1 -->
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="project1.png" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">Inventory Management</h4>
+                        <p class="text-sm text-gray-300 mb-3">A web-based app to manage product stock and movement across
+                            warehouses.</p>
+                        <p class="text-sm text-[#00abf0]">Laravel · MySQL · Tailwind CSS</p>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="project2.png" alt="Project 2" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">E-Learning Platform</h4>
+                        <p class="text-sm text-gray-300 mb-3">A learning system with quizzes, leaderboards, and user
+                            dashboards.</p>
+                        <p class="text-sm text-[#00abf0]">Vue.js · Firebase · Tailwind CSS</p>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="project3.png" alt="Project 3" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold mb-2">Charity Donation App</h4>
+                        <p class="text-sm text-gray-300 mb-3">A platform for transparent donation tracking integrated with
+                            e-wallets.</p>
+                        <p class="text-sm text-[#00abf0]">React · Node.js · MongoDB</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Softskill -->
+            <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Softskill</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Softskill 1 -->
+                <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Team Leadership</h4>
+                    <p class="text-sm text-gray-300">Led multiple projects and collaborated effectively with
+                        cross-functional teams to meet deadlines and ensure project success.</p>
+                </div>
+    
+                <!-- Softskill 2 -->
+                <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Public Speaking</h4>
+                    <p class="text-sm text-gray-300">Presented in seminars and actively contributed in discussions,
+                        improving confidence and communication clarity.</p>
+                </div>
+    
+                <!-- Softskill 3 -->
+                <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Problem Solving</h4>
+                    <p class="text-sm text-gray-300">Analyzed and resolved bugs or design issues efficiently by identifying
+                        root causes and applying logical strategies.</p>
+                </div>
+            </div>
         </div>
     </section>
 
