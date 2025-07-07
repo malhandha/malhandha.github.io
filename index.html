@@ -1,106 +1,106 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hi It's Me, Alfian</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="icon" type="png" href="foto.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            poppins: ['Poppins', 'sans-serif'],
-                        },
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi It's Me, Alfian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="png" href="LOGObaru.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
                     },
                 },
-            }
-        </script>
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 800,
-                once: true,
-            });
+            },
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
 
-        </script>
-    </head>
+    </script>
+</head>
 
-    <body class="bg-[#1a1a2e] text-gray-100 font-poppins scroll-smooth">
-        <header class="fixed top-0 left-0 w-full z-50 bg-blur-1a1a2e shadow-lg backdrop-blur-md">
-            <div class="container mx-auto px-4 py-5 flex items-center justify-between lg:pl-20 lg:pr-20">
-                <a href="#home" class="text-2xl font-bold text-white ">
-                    <span class="text-[#00abf0]">Alfian</span>.
-                </a>
+<body class="bg-[#1a1a2e] text-gray-100 font-poppins scroll-smooth">
+    <header class="fixed top-0 left-0 w-full z-50 bg-blur-1a1a2e shadow-lg backdrop-blur-md">
+        <div class="container mx-auto px-4 py-5 flex items-center justify-between lg:pl-20 lg:pr-20">
+            <a href="#home" class="text-2xl font-bold text-white ">
+                <span class="text-[#00abf0]">Alfian</span>.
+            </a>
 
-                <nav class="space-x-6 hidden md:flex">
-                    <a href="#home" class="text-gray-300 hover:text-[#00abf0] transition">Home</a>
-                    <a href="#about" class="text-gray-300 hover:text-[#00abf0] transition">About</a>
-                    <a href="#experience" class="text-gray-300 hover:text-[#00abf0] transition">Experience</a>
-                    <a href="#skill" class="text-gray-300 hover:text-[#00abf0] transition">Skills</a>
-                </nav>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#home" class="text-gray-300 hover:text-[#00abf0] transition">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-[#00abf0] transition">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-[#00abf0] transition">Experience</a>
+                <a href="#skill" class="text-gray-300 hover:text-[#00abf0] transition">Skills</a>
+            </nav>
 
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-300 hover:text-[#00abf0] focus:outline-none text-2xl">
-                        <i class="ri-menu-line"></i>
-                    </button>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-300 hover:text-[#00abf0] focus:outline-none text-2xl">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1a1a2e] px-4 pb-4">
+            <a href="#home" class="block py-2 text-gray-300 hover:text-[#00abf0]">Home</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-[#00abf0]">About</a>
+            <a href="#experience" class="block py-2 text-gray-300 hover:text-[#00abf0]">Experience</a>
+            <a href="#skill" class="block py-2 text-gray-300 hover:text-[#00abf0]">Skills</a>
+        </div>
+    </header>
+
+    <section id="home" class="pt-10 lg:pt-6 mt-10 -mb-20 pb-20 bg-[#1a1a2e] lg:-mt-[50px] text-gray-100">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2 lg:pl-20">
+                    <h1 class="font-semibold text-lg lg:text-xl">Hi Everyone, It's Me
+                        <span class="font-bold text-[#00abf0] block text-4xl" id="typing-name"></span>
+                    </h1>
+                    <h2 class="text-gray-300 mb-3 lg:text-lg">Fullstack Developer</h2>
+                    <p class="font-medium text-sm lg:text-base">An active Information Systems student with knowledge in
+                        web development using Laravel and
+                        Tailwind CSS, and skills in Go Language. Actively involved in organizations, accustomed to
+                        working in teams, and possesses strong communication skills.</p><br>
+                    <a href="#about"
+                        class=" font-semibold bg-[#00abf0] border-2 border-[#00abf0] rounded-full hover:shadow-lg hover:border-2  hover:bg-[#222831] hover:text-[#00abf0] transition duration-400 ease-in-out py-2 px-5 mt-6">About
+                        Me</a>
                 </div>
-            </div>
-
-            <div id="mobile-menu" class="hidden md:hidden bg-[#1a1a2e] px-4 pb-4">
-                <a href="#home" class="block py-2 text-gray-300 hover:text-[#00abf0]">Home</a>
-                <a href="#about" class="block py-2 text-gray-300 hover:text-[#00abf0]">About</a>
-                <a href="#experience" class="block py-2 text-gray-300 hover:text-[#00abf0]">Experience</a>
-                <a href="#skill" class="block py-2 text-gray-300 hover:text-[#00abf0]">Skills</a>
-            </div>
-        </header>
-
-        <section id="home" class="pt-10 lg:pt-6 mt-10 -mb-20 pb-20 bg-[#1a1a2e] lg:-mt-[50px] text-gray-100">
-            <div class="container">
-                <div class="flex flex-wrap">
-                    <div class="w-full self-center px-4 lg:w-1/2 lg:pl-20">
-                        <h1 class="font-semibold text-lg lg:text-xl">Hi Everyone, It's Me
-                            <span class="font-bold text-[#00abf0] block text-4xl">Muhammad Alfian Handi Yudha</span>
-                        </h1>
-                        <h2 class="text-gray-300 mb-3 lg:text-lg">Fullstack Developer</h2>
-                        <p class="font-medium text-sm lg:text-base">An active Information Systems student with knowledge in
-                            web development using Laravel and
-                            Tailwind CSS, and skills in Go Language. Actively involved in organizations, accustomed to
-                            working in teams, and possesses strong communication skills.</p><br>
-                        <a href="#about"
-                            class=" font-semibold bg-[#00abf0] border-2 border-[#00abf0] rounded-full hover:shadow-lg hover:border-2  hover:bg-[#222831] hover:text-[#00abf0] transition duration-400 ease-in-out py-2 px-5 mt-6">About
-                            Me</a>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mb-10 -mt-[30px] lg:mt-9 lg:right-0">
+                        <img src="fotobaru.png" alt="foto ganteng"
+                            class="w-full md:w-full lg:w-full max-w-full mx-auto">
                     </div>
-                    <div class="w-full self-end px-4 lg:w-1/2">
-                        <div class="relative mb-10 -mt-[30px] lg:mt-9 lg:right-0">
-                            <img src="fotobaru.png" alt="foto ganteng"
-                                class="w-full md:w-full lg:w-full max-w-full mx-auto">
-                        </div>
-                    </div>
-                    <div class="relative -mt-[105px] -mb-10 lg:pl-20 pl-5 space-x-2 ">
-                        <a href="https://www.instagram.com/malhandha/" target="_blank" rel="noopener noreferrer">
-                            <i class="ri-instagram-line text-[45px] text-[#00abf0]"></i>
-                        </a>
-                        <a href="https://github.com/malhandha/" target="_blank" rel="noopener noreferrer">
-                            <i class="ri-github-fill text-[45px] text-[#00abf0]"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/muhammad-alfian-handi-yudha-75a59928b/" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="ri-linkedin-fill text-[45px] text-[#00abf0]"></i>
-                        </a>
-                    </div>
-
                 </div>
+                <div class="relative -mt-[105px] -mb-10 lg:pl-20 pl-5 space-x-2 ">
+                    <a href="https://www.instagram.com/malhandha/" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-instagram-line text-[45px] text-[#00abf0]"></i>
+                    </a>
+                    <a href="https://github.com/malhandha/" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-github-fill text-[45px] text-[#00abf0]"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-alfian-handi-yudha-75a59928b/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="ri-linkedin-fill text-[45px] text-[#00abf0]"></i>
+                    </a>
+                </div>
+
             </div>
-        </section>
-        <!-- <section id="about" class="pt-36 pb-32">
+        </div>
+    </section>
+    <!-- <section id="about" class="pt-36 pb-32">
             <div class="container">
                 <div class="flex flex-warp">
                     <div class="w-full px-4 mb-10">
@@ -115,89 +115,89 @@
             </div>
 
         </section> -->
-        <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900">
-            <div class="container mx-auto px-4 mt-4 -mb-4 text-center">
-                <h2 class="text-4xl font-bold mb-6">
-                    About <span class="text-[#00abf0]">Me</span>
-                </h2>
+    <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900">
+        <div class="container mx-auto px-4 mt-4 -mb-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                About <span class="text-[#00abf0]">Me</span>
+            </h2>
 
-                <img src="fotobaru.png" alt="Profile" class="relative w-[480px] h-full mx-auto -mb-10 -mt-20" />
+            <img src="fotobaru.png" alt="Profile" class="relative w-[480px] h-full mx-auto -mb-10 -mt-20" />
 
 
-                <h3 class="text-2xl font-semibold mb-4">Fullstack Developer!</h3>
+            <h3 class="text-2xl font-semibold mb-4">Fullstack Developer!</h3>
 
-                <p class="max-w-2xl mx-auto mb-6 text-gray-300 text-base">
-                    I’m a tech enthusiast with a passion for creating meaningful digital solutions. With a background in
-                    Information Systems, I enjoy turning ideas into responsive websites and applications, while constantly
-                    learning and collaborating in team-based environments.
-                </p>
+            <p class="max-w-2xl mx-auto mb-6 text-gray-300 text-base">
+                I’m a tech enthusiast with a passion for creating meaningful digital solutions. With a background in
+                Information Systems, I enjoy turning ideas into responsive websites and applications, while constantly
+                learning and collaborating in team-based environments.
+            </p>
 
-                <a href="#experience"
-                    class="inline-block bg-[#00abf0] text-white px-6 border-2 border-[#00abf0] py-2 rounded-full font-semibold hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0] transition duration-300">
-                    My Projects
-                </a>
-            </div>
-        </section>
+            <a href="#experience"
+                class="inline-block bg-[#00abf0] text-white px-6 border-2 border-[#00abf0] py-2 rounded-full font-semibold hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0] transition duration-300">
+                My Projects
+            </a>
+        </div>
+    </section>
 
-        <section id="experience" class="py-16 bg-[#1a1a2e] text-white lg:pl-20 lg:pr-20">
-            <div class="container mx-auto px-4 -mb-[50px]">
-                <h2 class="text-3xl font-bold text-center mb-4  mt-8">Experience</h2>
-                <h3 class="text-2xl font-semibold text-[#00abf0] lg:pl-05 mb-5">My <span class="text-white">Project</span>
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+    <section id="experience" class="py-16 bg-[#1a1a2e] text-white lg:pl-20 lg:pr-20">
+        <div class="container mx-auto px-4 -mb-[50px]">
+            <h2 class="text-3xl font-bold text-center mb-4  mt-8">Experience</h2>
+            <h3 class="text-2xl font-semibold text-[#00abf0] lg:pl-05 mb-5">My <span class="text-white">Project</span>
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
 
-                    <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                        <img src="projectvillwork.png" alt="Project 1" class="w-full h-[270px] object-cover">
-                        <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
-                            <h4 class="text-xl font-semibold mb-5">VillWork</h4>
-                            <p class="text-sm text-gray-300 mb-3">VillWork is a job platform application where users can
-                                post jobs, apply for jobs, and also participate in training
-                                programs.</p>
-                            <p class="text-sm text-[#00abf0]">Laravel · MySQL · Tailwind CSS</p>
-                            <div class="flex justify-center mt-4">
-                                <a href="https://github.com/malhandha/VillWork" target="_blank" rel="noopener noreferrer"
-                                    class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
-                                    See Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                        <img src="project2.png" alt="Project 2" class="w-full h-[270px] object-cover">
-                        <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
-                            <h4 class="text-xl font-semibold mb-5">Wisataku</h4>
-                            <p class="text-sm text-gray-300 mb-3">Wisataku is a desktop application designed for booking
-                                travel tickets and exploring recommended tourist destinations.</p>
-                            <p class="text-sm text-[#00abf0]">Visual Basic · MySQL</p>
-                            <div class="flex justify-center mt-4">
-                                <a href="https://github.com/malhandha/Wisataku" target="_blank" rel="noopener noreferrer"
-                                    class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
-                                    See Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                        <img src="project3.png" alt="Project 1" class="w-full h-[270px] object-cover">
-                        <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
-                            <h4 class="text-xl font-semibold mb-5">MyHospital</h4>
-                            <p class="text-sm text-gray-300 mb-3">MyHospital is a mobile application that functions as an
-                                online pharmacy and allows users to book hospital appointments.</p>
-                            <p class="text-sm text-[#00abf0]">Kotlin · Android Studio</p>
-                            <div class="flex justify-center mt-4">
-                                <a href="https://github.com/malhandha/MyHospital" target="_blank" rel="noopener noreferrer"
-                                    class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
-                                    See Project
-                                </a>
-                            </div>
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="projectvillwork.png" alt="Project 1" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">VillWork</h4>
+                        <p class="text-sm text-gray-300 mb-3">VillWork is a job platform application where users can
+                            post jobs, apply for jobs, and also participate in training
+                            programs.</p>
+                        <p class="text-sm text-[#00abf0]">Laravel · MySQL · Tailwind CSS</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/VillWork" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Softskill -->
-                <!-- <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Softskill</h3>
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="project2.png" alt="Project 2" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">Wisataku</h4>
+                        <p class="text-sm text-gray-300 mb-3">Wisataku is a desktop application designed for booking
+                            travel tickets and exploring recommended tourist destinations.</p>
+                        <p class="text-sm text-[#00abf0]">Visual Basic · MySQL</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/Wisataku" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
+                    <img src="project3.png" alt="Project 1" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">MyHospital</h4>
+                        <p class="text-sm text-gray-300 mb-3">MyHospital is a mobile application that functions as an
+                            online pharmacy and allows users to book hospital appointments.</p>
+                        <p class="text-sm text-[#00abf0]">Kotlin · Android Studio</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/MyHospital" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Softskill -->
+            <!-- <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Softskill</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
@@ -218,72 +218,118 @@
                             root causes and applying logical strategies.</p>
                     </div>
                 </div> -->
-            </div>
-        </section>
-        <section id="skill" class="py-20  bg-[#1a1a2e] text-gray-100 lg:pl-20 lg:pr-20 lg:mt-[10px] bg-gray-900">
-            <div class="container mx-auto px-4 ">
-                <h2 class="text-4xl font-bold text-center mb-[55px] mt-[20px]">
-                    My <span class="text-[#00abf0]">Skills</span>
-                </h2>
+        </div>
+    </section>
+    <section id="skill" class="py-20  bg-[#1a1a2e] text-gray-100 lg:pl-20 lg:pr-20 lg:mt-[10px] bg-gray-900">
+        <div class="container mx-auto px-4 ">
+            <h2 class="text-4xl font-bold text-center mb-[55px] mt-[20px]">
+                My <span class="text-[#00abf0]">Skills</span>
+            </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:mb-[100px]">
-                    <div class="border border-[#00abf0] p-6 rounded-lg shadow-md ">
-                        <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Hard Skills</h3>
-                        <div class="space-y-4">
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Web Programming</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Tailwind CSS Framework</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Laravel + Livewire Framework
-                            </div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Go Language</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">MySQL</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Microsoft Office</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:mb-[100px]">
+                <div class="border border-[#00abf0] p-6 rounded-lg shadow-md ">
+                    <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Hard Skills</h3>
+                    <div class="space-y-4">
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Web Programming</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Tailwind CSS Framework</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Laravel + Livewire Framework
                         </div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Go Language</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">MySQL</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Microsoft Office</div>
                     </div>
+                </div>
 
-                    <div class="border border-[#00abf0] p-6 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Soft Skills</h3>
-                        <div class="space-y-4">
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Public Speaking</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Teamwork</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Leadership</div>
-                            <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Problem Solving</div>
-                        </div>
+                <div class="border border-[#00abf0] p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Soft Skills</h3>
+                    <div class="space-y-4">
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Public Speaking</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Teamwork</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Leadership</div>
+                        <div class="bg-[#2e2e48] px-4 py-2 rounded-md text-sm font-medium">Problem Solving</div>
                     </div>
                 </div>
             </div>
-        </section>
-
-<footer class="bg-[#1a1a2e] text-gray-300 pt-10 pb-6 px-6 lg:px-20">
-    <div class="container mx-auto text-center space-y-4">
-        <a href="#home" class="text-2xl font-bold text-white inline-block">
-            <span class="text-[#00abf0]">Alfian</span>.
-        </a>
-
-        <div class="space-x-6 text-sm">
-            <a href="#home" class="hover:text-[#00abf0] transition">Home</a>
-            <a href="#about" class="hover:text-[#00abf0] transition">About</a>
-            <a href="#experience" class="hover:text-[#00abf0] transition">Experience</a>
-            <a href="#skill" class="hover:text-[#00abf0] transition">Skills</a>
         </div>
-        <div class="space-x-4 mt-2 text-[28px]">
-            <a href="https://www.instagram.com/malhandha/" target="_blank" class="hover:text-[#00abf0] transition">
-                <i class="ri-instagram-line"></i>
+    </section>
+
+    <footer class="bg-[#1a1a2e] text-gray-300 pt-10 pb-6 px-6 lg:px-20">
+        <div class="container mx-auto text-center space-y-4">
+            <a href="#home" class="text-2xl font-bold text-white inline-block">
+                <span class="text-[#00abf0]">Alfian</span>.
             </a>
-            <a href="https://github.com/malhandha/" target="_blank" class="hover:text-[#00abf0] transition">
-                <i class="ri-github-fill"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/muhammad-alfian-handi-yudha-75a59928b/" target="_blank"
-                class="hover:text-[#00abf0] transition">
-                <i class="ri-linkedin-fill"></i>
-            </a>
+
+            <div class="space-x-6 text-sm">
+                <a href="#home" class="hover:text-[#00abf0] transition">Home</a>
+                <a href="#about" class="hover:text-[#00abf0] transition">About</a>
+                <a href="#experience" class="hover:text-[#00abf0] transition">Experience</a>
+                <a href="#skill" class="hover:text-[#00abf0] transition">Skills</a>
+            </div>
+            <div class="space-x-4 mt-2 text-[28px]">
+                <a href="https://www.instagram.com/malhandha/" target="_blank" class="hover:text-[#00abf0] transition">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://github.com/malhandha/" target="_blank" class="hover:text-[#00abf0] transition">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-alfian-handi-yudha-75a59928b/" target="_blank"
+                    class="hover:text-[#00abf0] transition">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-400 mt-4">
+                &copy; 2025 Muhammad Alfian Handi Yudha. All rights reserved.
+            </p>
         </div>
+    </footer>
 
-        <p class="text-sm text-gray-400 mt-4">
-            &copy; 2025 Muhammad Alfian Handi Yudha. All rights reserved.
-        </p>
-    </div>
-</footer>
+    <script>
+        const typingElement = document.getElementById("typing-name");
+            const text = "Muhammad Alfian Handi Yudha";
+            let index = 0;
+            let isDeleting = false;
 
-    </body>
+            function typeLoop() {
+                if (isDeleting) {
+                    typingElement.innerHTML = text.substring(0, index--);
+                } else {
+                    typingElement.innerHTML = text.substring(0, index++);
+                }
 
-    </html>
+                if (!isDeleting && index > text.length) {
+                    isDeleting = true;
+                    setTimeout(typeLoop, 2000); 
+                    return;
+                } else if (isDeleting && index === 0) {
+                    isDeleting = false;
+                }
+
+                setTimeout(typeLoop, isDeleting ? 50 : 100); 
+            }
+
+            window.addEventListener("DOMContentLoaded", typeLoop);
+    </script>
+    <style>
+        #typing-name::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+            color: #ffffff;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+
+</html>
