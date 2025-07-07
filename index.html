@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-[#1a1a2e] px-4 pb-4">
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1a1a2e] px-4 pb-4 transition-all duration-300 ease-in-out">
             <a href="#home" class="block py-2 text-gray-300 hover:text-[#00abf0]">Home</a>
             <a href="#about" class="block py-2 text-gray-300 hover:text-[#00abf0]">About</a>
             <a href="#experience" class="block py-2 text-gray-300 hover:text-[#00abf0]">Experience</a>
@@ -286,29 +286,40 @@
 
     <script>
         const typingElement = document.getElementById("typing-name");
-            const text = "Muhammad Alfian Handi Yudha";
-            let index = 0;
-            let isDeleting = false;
+        const text = "Muhammad Alfian Handi Yudha";
+        let index = 0;
+        let isDeleting = false;
 
-            function typeLoop() {
-                if (isDeleting) {
-                    typingElement.innerHTML = text.substring(0, index--);
-                } else {
-                    typingElement.innerHTML = text.substring(0, index++);
-                }
-
-                if (!isDeleting && index > text.length) {
-                    isDeleting = true;
-                    setTimeout(typeLoop, 2000); 
-                    return;
-                } else if (isDeleting && index === 0) {
-                    isDeleting = false;
-                }
-
-                setTimeout(typeLoop, isDeleting ? 50 : 100); 
+        function typeLoop() {
+            if (isDeleting) {
+                typingElement.innerHTML = text.substring(0, index--);
+            } else {
+                typingElement.innerHTML = text.substring(0, index++);
             }
 
-            window.addEventListener("DOMContentLoaded", typeLoop);
+            if (!isDeleting && index > text.length) {
+                isDeleting = true;
+                setTimeout(typeLoop, 2000);
+                return;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+            }
+
+            setTimeout(typeLoop, isDeleting ? 50 : 100);
+        }
+
+        window.addEventListener("DOMContentLoaded", typeLoop);
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuToggle.innerHTML = mobileMenu.classList.contains('hidden')
+                ? '<i class="ri-menu-line"></i>'
+                : '<i class="ri-close-line"></i>';
+        });
+
     </script>
     <style>
         #typing-name::after {
