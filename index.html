@@ -8,6 +8,7 @@
     <link href="/src/style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="png" href="foto.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -31,8 +32,8 @@
 
 <body class="bg-[#1a1a2e] text-gray-100 font-poppins ">
     <header class="flex flex-wrap">
-        <a href="#" class="w-1/2">Alfian.</a>
-        <nav class="w-1/2 right-0 mt-0">
+        <a href="#" class="">Alfian.</a>
+        <nav class=" right-0 mt-0">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skill">Skills</a>
@@ -40,7 +41,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="home" class="pt-10 lg:pt-6 -mt-10 -mb-20 pb-20 bg-[#1a1a2e] text-gray-100" >
+    <section id="home" class="pt-10 lg:pt-6 mt-10 -mb-20 pb-20 bg-[#1a1a2e] lg:-mt-[50px] text-gray-100">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2 lg:pl-20">
@@ -56,12 +57,12 @@
                         class=" font-semibold bg-[#00abf0] rounded-full hover:shadow-lg hover:border-2  hover:bg-[#222831] hover:text-[#00abf0] transition duration-400 ease-in-out py-2 px-5 mt-6">Contact</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                    <div class="relative mb-10 -mt-[30px] lg:mt-9 lg:right-0">
                         <img src="fotobaru.png" alt="foto ganteng"
                             class="w-full md:w-full lg:w-full max-w-full mx-auto">
                     </div>
                 </div>
-                <div class="relative -mt-[105px] -mb-10 pl-20 space-x-2">
+                <div class="relative -mt-[105px] -mb-10 lg:pl-20 pl-5 space-x-2 ">
                     <a href="https://www.instagram.com/malhandha/" target="_blank" rel="noopener noreferrer">
                         <i class="ri-instagram-line text-[45px] text-[#00abf0]"></i>
                     </a>
@@ -92,7 +93,7 @@
         </div>
 
     </section> -->
-    <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900" >
+    <section id="about" class="py-20 bg-[#222831] text-gray-100 bg-gray-900">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-6">
                 About <span class="text-[#00abf0]">Me</span>
@@ -104,7 +105,9 @@
             <h3 class="text-2xl font-semibold mb-4">Fullstack Developer!</h3>
 
             <p class="max-w-2xl mx-auto mb-6 text-gray-300 text-base">
-                I’m a tech enthusiast with a passion for creating meaningful digital solutions. With a background in Information Systems, I enjoy turning ideas into responsive websites and applications, while constantly learning and collaborating in team-based environments.
+                I’m a tech enthusiast with a passion for creating meaningful digital solutions. With a background in
+                Information Systems, I enjoy turning ideas into responsive websites and applications, while constantly
+                learning and collaborating in team-based environments.
             </p>
 
             <a href="#"
@@ -114,69 +117,83 @@
         </div>
     </section>
 
-    <section id="experience" class="py-16 bg-[#1a1a2e] text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
-            <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Hardskill</h3>
+    <section id="experience" class="py-16 bg-[#1a1a2e] text-white lg:pl-20 lg:pr-20">
+        <div class="container mx-auto px-4 -mb-10">
+            <h2 class="text-3xl font-bold text-center mb-8  ">Experience</h2>
+            <h3 class="text-2xl font-semibold text-[#00abf0] lg:pl-05 mb-5">My <span class="text-white">Project</span>
+            </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <!-- Card 1 -->
+
                 <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                    <img src="project1.png" alt="Project 1" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-semibold mb-2">Inventory Management</h4>
-                        <p class="text-sm text-gray-300 mb-3">A web-based app to manage product stock and movement across
-                            warehouses.</p>
+                    <img src="projectvillwork.png" alt="Project 1" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">VillWork</h4>
+                        <p class="text-sm text-gray-300 mb-3">VillWork is a job platform application where users can
+                            post jobs, apply for jobs, and also participate in training
+                            programs.</p>
                         <p class="text-sm text-[#00abf0]">Laravel · MySQL · Tailwind CSS</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/VillWork" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Card 2 -->
+
                 <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                    <img src="project2.png" alt="Project 2" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-semibold mb-2">E-Learning Platform</h4>
-                        <p class="text-sm text-gray-300 mb-3">A learning system with quizzes, leaderboards, and user
-                            dashboards.</p>
-                        <p class="text-sm text-[#00abf0]">Vue.js · Firebase · Tailwind CSS</p>
+                    <img src="project2.png" alt="Project 2" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">Wisataku</h4>
+                        <p class="text-sm text-gray-300 mb-3">Wisataku is a desktop application designed for booking travel tickets and exploring recommended tourist destinations.</p>
+                        <p class="text-sm text-[#00abf0]">Visual Basic · MySQL</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/Wisataku" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
+                        </div>
                     </div>
                 </div>
-    
-                <!-- Card 3 -->
+
                 <div class="bg-[#2e2e48] rounded-lg shadow-md overflow-hidden">
-                    <img src="project3.png" alt="Project 3" class="w-full h-40 object-cover">
-                    <div class="p-4">
-                        <h4 class="text-xl font-semibold mb-2">Charity Donation App</h4>
-                        <p class="text-sm text-gray-300 mb-3">A platform for transparent donation tracking integrated with
-                            e-wallets.</p>
-                        <p class="text-sm text-[#00abf0]">React · Node.js · MongoDB</p>
+                    <img src="project3.png" alt="Project 1" class="w-full h-[270px] object-cover">
+                    <div class="p-[58px] -ml-[25px] -mt-[30px] -mb-[20px]">
+                        <h4 class="text-xl font-semibold mb-5">MyHospital</h4>
+                        <p class="text-sm text-gray-300 mb-3">MyHospital is a mobile application that functions as an online pharmacy and allows users to book hospital appointments.</p>
+                        <p class="text-sm text-[#00abf0]">Kotlin · Android Studio</p>
+                        <div class="flex justify-center mt-4">
+                            <a href="https://github.com/malhandha/MyHospital" target="_blank" rel="noopener noreferrer"
+                                class="px-4 py-1 text-sb text-gray-100 rounded-full border-2 bg-[#00abf0] font-poppins hover:bg-transparent hover:text-[#00abf0] hover:border-2 border-[#00abf0]">
+                                See Project
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Softskill -->
-            <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Softskill</h3>
+            <!-- <h3 class="text-2xl font-semibold text-[#00abf0] mb-6">Softskill</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Softskill 1 -->
+                
                 <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
                     <h4 class="text-xl font-semibold mb-2">Team Leadership</h4>
                     <p class="text-sm text-gray-300">Led multiple projects and collaborated effectively with
                         cross-functional teams to meet deadlines and ensure project success.</p>
                 </div>
     
-                <!-- Softskill 2 -->
                 <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
                     <h4 class="text-xl font-semibold mb-2">Public Speaking</h4>
                     <p class="text-sm text-gray-300">Presented in seminars and actively contributed in discussions,
                         improving confidence and communication clarity.</p>
                 </div>
     
-                <!-- Softskill 3 -->
                 <div class="bg-[#2e2e48] rounded-lg p-6 shadow-md">
                     <h4 class="text-xl font-semibold mb-2">Problem Solving</h4>
                     <p class="text-sm text-gray-300">Analyzed and resolved bugs or design issues efficiently by identifying
                         root causes and applying logical strategies.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
