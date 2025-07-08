@@ -303,6 +303,8 @@
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show'); // agar animasi muncul lagi saat discroll balik
                     }
                 });
             }, {
