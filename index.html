@@ -81,7 +81,7 @@
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mb-10 -mt-[30px] lg:mt-9 lg:right-0">
                         <img src="fotobaru.png" alt="foto ganteng"
-                            class="w-full md:w-full lg:w-full max-w-full mx-auto">
+                            class="w-full md:w-full lg:w-full max-w-full mx-auto animate-float" />
                     </div>
                 </div>
                 <div class="relative -mt-[105px]  -mb-10 lg:pl-20 pl-5 space-x-2 text-gray-300">
@@ -121,7 +121,8 @@
                 About <span class="text-[#00abf0]">Me</span>
             </h2>
 
-            <img src="fotobaru.png" alt="Profile" class="relative w-[480px] h-full mx-auto -mb-10 -mt-20" />
+            <img src="fotobaru.png" alt="Profile"
+                class="relative w-[480px] h-full mx-auto -mb-10 -mt-20 animate-float" />
 
 
             <h3 class="text-2xl font-semibold mb-4">Fullstack Developer!</h3>
@@ -391,6 +392,23 @@
             51%,
             100% {
                 opacity: 0;
+            }
+        }
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @layer utilities {
+            .animate-float {
+                animation: float 3s ease-in-out infinite;
             }
         }
     </style>
